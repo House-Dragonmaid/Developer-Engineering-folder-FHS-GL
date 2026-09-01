@@ -3,6 +3,14 @@
  * Inspired by the layered, game-profile feel of the reference site.
  */
 
+@font-face {
+  font-family: "CookieRun";
+  src: url("../CookieRunFont_TTF/CookieRun Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --ink: #252525;
   --ink-soft: #3b3b3b;
@@ -56,7 +64,7 @@ body {
   padding: 0 0 40px;
   color: var(--text);
   background: var(--page);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "CookieRun", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.55;
   box-shadow: var(--shadow);
@@ -173,7 +181,7 @@ body > img:first-of-type { margin-left: 18px; border: 1px solid #aeb3ba; }
 body a:not(.topnav a) { color: var(--blue-dark); font-weight: 700; }
 body a:not(.topnav a):hover { color: var(--orange); }
 
- table {
+table {
   width: calc(100% - 36px);
   margin: 18px;
   border-collapse: collapse;
