@@ -40,6 +40,10 @@
 const img = document.getElementById("ima");
 
 img.addEventListener("click", function () {
-    img.style.width = "200px";
-    img.style.height = "100px";
+    if (img.style.width === "640px"){
+        img.style.width = '320px';
+    } else {
+        img.style.width = "640px";
+    }
+    
 });
