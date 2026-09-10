@@ -36,3 +36,10 @@
         addThemeButton();
     }
 })();
+
+const img = document.getElementById("ima");
+
+img.addEventListener("click", function () {
+    img.style.width = "200px";
+    img.style.height = "100px";
+});
