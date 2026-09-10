@@ -37,13 +37,14 @@
     }
 })();
 
-const img = document.getElementById("ima");
+const img = document.querySelectorAll(".ima");
 
-img.addEventListener("click", function () {
-    if (img.style.width === "640px"){
-        img.style.width = '320px';
-    } else {
-        img.style.width = "640px";
-    }
-    
+img.forEach((image) => {
+    image.addEventListener("click", function () {
+        if (image.style.width === "640px") {
+            image.style.width = '320px';
+        } else {
+            image.style.width = "640px";
+        }
+    });
 });
