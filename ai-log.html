@@ -23,5 +23,44 @@
         <a href="https://chatgpt.com/share/6aa3304d-e358-83ea-b693-f0991c54e6ef">JavaScript</a>
         <p>I used this to help work out the kinks with what I was trying to achieve, which was making the images shrink on click.<br>Prompt: The image size manipulation in the Javascript and it only works on the first image, what is wrong with it<br>I learned that i could figure things out by myself</p>
     </div>
+    <div>
+        <h1>9/14/26</h1>
+        <p>Prompt:can you help me create a filtering for my projects based on the classes in the div</p>
+        <p>"Yep! I set this up directly in your GitHub project.
+
+The important change is that your project <div> now uses one class attribute:
+
+<div class="project JavaScript HTML CSS">
+
+Your original:
+
+<div class="JavaScript" class="HTML" class="CSS">
+
+doesn't work the way you intended because an HTML element can only have one class attribute. Multiple classes go inside the same attribute, separated by spaces.
+
+I also added:
+
+All
+HTML
+CSS
+JavaScript
+
+filter buttons.
+
+JavaScript that checks whether each project's <div> has the selected class.
+script.js is now loaded on projects.html.
+
+So when you eventually add another project, you can simply do something like:
+
+<div class="project HTML CSS">
+
+and it will automatically appear under HTML, CSS, and All, but not JavaScript.
+
+The filtering logic is in js/script.js, so you won't have to manually write filtering code for every new project.
+
+One thing I haven't done yet is style the filter buttons to match the rest of your site. If you want, 
+I can add that to your styles.css next."</p>
+        <p>I didnt really learn much, as i just wanted a filter for my projects</p>
+    </div>
 </body>
 </html>
