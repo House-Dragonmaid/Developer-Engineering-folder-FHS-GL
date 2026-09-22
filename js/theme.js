@@ -43,8 +43,13 @@ img.forEach((image) => {
     image.addEventListener("click", function () {
         if (image.style.width === "640px") {
             image.style.width = '320px';
+        } if(image.style.width === "1080px") {
+            image.style.width = '640px';
         } else {
-            image.style.width = "640px";
+            if(image.style.width === "320px") {
+                image.style.width = "1080px";
+            }
+            else{image.style.width = "320px";}
         }
     });
 });
